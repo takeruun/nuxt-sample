@@ -1,0 +1,11 @@
+version: '3'
+services:
+  vue:
+    build: .
+    volumes:
+      - .:/app
+    command: npm run dev
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
